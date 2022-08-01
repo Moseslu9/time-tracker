@@ -110,13 +110,13 @@ const activateClickedButton = (button) => {
   button.classList.add("active");
 };
 
-// const loadData = async () => {
-//   // Fetch data
-//   const response = await fetch('./data.json')
-//   const fetchedData = await response.json()
-//   data = fetchedData
-//   buttons[1].click()
-// }
+const loadData = async () => {
+  // Fetch data
+  const response = await fetch('./data.json')
+  const fetchedData = await response.json()
+  data = fetchedData
+  buttons[1].click()
+}
 
 const clearActivities = () => {
   const activities = document.querySelectorAll(".activity-tracker-option");
